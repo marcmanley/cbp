@@ -3,11 +3,20 @@
 sampleList = [1, 2, 3, 4, 5]
 print("Here's our initial list:")
 print(sampleList)
+
+# using type to print a data type's type
+
 print(type(sampleList))
+
+# using sum
+
 theTotalSum = sum(sampleList)
 print("Here's the sum of that list:")
 print(theTotalSum)
 print("That's the way you do it!")
+
+# how to .append
+
 sampleList.append(6)
 print("Here's our updated list:")
 print(sampleList)
@@ -18,6 +27,9 @@ print(sampleList)
 sampleList.append(7)
 print("We've APPENDED #7 into our list:")
 print(sampleList)
+
+# how to .insert
+
 sampleList.insert(7,8)
 print("We've also INSERTED 7 and 8 into our list:")
 print(sampleList)
@@ -26,10 +38,16 @@ print("The new list:")
 print(sampleList)
 print("The new sum:")
 print(theTotalSum)
+
+# how to .remove
+
 sampleList.remove(8)
 print("We've now REMOVED #8 from the list. Our new total is now:")
 theTotalSum = sum(sampleList)
 print(theTotalSum)
+
+# how to .reverse
+
 sampleList.reverse() #gonna switch things up
 print("So now we're gonna switch things up with REVERSE:")
 print(sampleList)
