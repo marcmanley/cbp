@@ -47,6 +47,9 @@ print("Can we reverse back?")
 fruitBasket2.reverse()
 print(fruitBasket2)
 print("Sure looks like it.")
+
+# how to print a variable's name and not not its value
+
 theData = { 'thePlace' : 'right here',
 'theTime' : 'right now' }
 for item in theData.items():
