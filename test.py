@@ -78,3 +78,13 @@ fruitDict1 = { 'redFruit' : 'apples', 'yellowFruit' : 'bananas',
 for item in fruitDict1.items():
     print('%s = %s' %item)
 print(type(fruitDict1))
+
+# [ dictionaries ]
+
+calories = { 'apples' : 52, 'bananas' : 89, 'pears' : 75 }
+c = calories
+print("Here we have some fruits and their calories:")
+print(c)
+print("Apples have less calories than pears: t/f?", c['apples'] < c['pears'])
+print("I wonder if bananas have fewer calories than pears ... t/f?", c['bananas'] < c['pears'])
+print("Of course it's",c['bananas'] < c['pears'],". That's because bananas have", c['bananas'], "calories.")
