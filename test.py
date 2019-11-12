@@ -88,3 +88,33 @@ print(c)
 print("Apples have less calories than pears: t/f?", c['apples'] < c['pears'])
 print("I wonder if bananas have fewer calories than pears ... t/f?", c['bananas'] < c['pears'])
 print("Of course it's",c['bananas'] < c['pears'],". That's because bananas have", c['bananas'], "calories.")
+
+# Classes
+
+class Dog:
+    """ Blueprint of a dog """
+
+    # class variable
+    # for all instances
+    species = ["canis lupus"]
+
+    def __init__(self, n, c):
+        self.name = n
+        self.state = "sleeping"
+        self.color = c
+
+    def command(self, x):
+        if x == self.name:
+            self.bark(2)
+        elif x == "sit":
+            self.state = "wag tail"
+
+    def bark(self, freq):
+        for i in range(freq):
+            print(self.name + ": Woof!")
+
+bello = Dog("bello", "black")
+alice = Dog("alice", "white")
+
+print(bello.color) # black
+print(alice.color) # white
