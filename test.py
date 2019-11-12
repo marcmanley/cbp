@@ -118,3 +118,21 @@ alice = Dog("alice", "white")
 
 print(bello.color) # black
 print(alice.color) # white
+
+bello.bark(1) # bello: Woof!
+
+alice.command("sit")
+print("alice: " + alice.state)
+# alice: switch
+bello.command("no")
+print("bello: " + bello.state)
+# bello: wag tail
+
+alice.command("alice")
+# alice: Woof!
+# alice: Woof!
+
+bello.species += ["wulf"]
+print(len(bello.species)
+    == len(alice.species))
+# True (!)
