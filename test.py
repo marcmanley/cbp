@@ -146,3 +146,8 @@ employee.lastname = "wonderland"
 
 print(employee.firstname + " " + employee.lastname + " $" + str(employee.salary))
 # alice wonder $122000
+
+# Avanced Fuctions
+
+list(map(lambda x: x[0], ['red', 'green', 'blue']))
+# Result: ['r', 'g', 'b']
