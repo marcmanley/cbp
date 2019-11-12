@@ -136,3 +136,13 @@ bello.species += ["wulf"]
 print(len(bello.species)
     == len(alice.species))
 # True (!)
+
+class Employee():
+    pass
+employee = Employee()
+employee.salary = 122000
+employee.firstname = "alice"
+employee.lastname = "wonderland"
+
+print(employee.firstname + " " + employee.lastname + " $" + str(employee.salary))
+# alice wonder $122000
